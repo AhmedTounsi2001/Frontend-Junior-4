@@ -169,7 +169,7 @@ main {
     border-bottom: solid 1px var(--Moderate-Cyan);
     padding-bottom: .3em;
     text-decoration: none;
-    width: 180px;
+    width: 178px;
 }
 
 .offer a>img:hover {
@@ -335,4 +335,128 @@ footer {
 
 /* Start Media Queries */
 
-@media screen {}
+@media all and (min-width:316px) and (max-width:1200px) {
+    header {
+        display: grid;
+        grid-template-columns: auto;
+        padding: 1em;
+        grid-template-areas: "hd" "img1" "hero";
+    }
+    .nav-bar img {
+        width: 100px;
+        height: 30px;
+    }
+    .nav-bar ul {
+        gap: 1em;
+    }
+    .nav-bar a {
+        font-size: .8em;
+    }
+    .illustration {
+        width: 100%;
+        margin: auto;
+    }
+    .hero {
+        text-align: center;
+    }
+    .hero h1 {
+        width: 100%;
+        font-size: 1.5em;
+    }
+    .hero p {
+        width: 100%;
+        font-size: .9em;
+    }
+    .hero form {
+        flex-flow: column;
+    }
+    input {
+        width: 100%;
+    }
+    button {
+        width: 100%;
+    }
+    main {
+        background: url(./img/bg-curve-mobile.svg) no-repeat;
+    }
+    .m-hero {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: "img2" "offer" "review";
+        padding: 1em;
+        place-items: center;
+    }
+    .offer h1 {
+        padding: 0em 1em;
+        font-size: 1em;
+        margin: auto;
+        text-align: center;
+    }
+    .offer p {
+        font-size: .9em;
+        color: var(--Desaturated-Blue);
+    }
+    .illustration2 {
+        margin: auto;
+        width: 100%;
+    }
+    .offer a {
+        align-self: center;
+    }
+    .review {
+        width: 100%;
+    }
+    .subscribe {
+        padding: 1em;
+        flex-flow: column;
+        text-align: center;
+        align-items: center;
+    }
+    .s-text {
+        width: 100%;
+        padding: 1em;
+    }
+    .s-text h2 {
+        font-size: 1.5em;
+    }
+    .s-text p {
+        font-size: .9em;
+        width: 100%;
+    }
+    .subscribe form {
+        margin: auto;
+        width: 80%;
+    }
+    .subscribe input {
+        width: 100%;
+    }
+    .subscribe button {
+        width: 100%;
+    }
+    footer {
+        padding: 1em;
+    }
+    .f-logo {
+        width: 100px;
+    }
+    .nav-content {
+        width: auto;
+        justify-content: flex-start;
+        flex-flow: column;
+        gap: 2em;
+    }
+    .nav-content>ul {
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    .navbar {
+        height: auto;
+    }
+    .navbar a {
+        margin: auto;
+    }
+    footer .socials {
+        display: flex;
+        flex-direction: row;
+    }
+}
